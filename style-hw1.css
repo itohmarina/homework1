@@ -1,0 +1,132 @@
+/*ブラウザがそれぞれ持っているCSSをリセットするための記述*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width:100%;
+  height:50px;
+  background-color: #FF9A4B;
+}
+
+main{
+  margin:50px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:center;
+
+}
+
+.main-box{
+  width:300px;
+  margin:0 30px 0 0;
+  background-color:#EEEEEE;
+  position:relative;
+}
+
+
+.main-image{
+  height: 150px;
+  width:280px;
+  margin:10px 10px auto;
+  background-size:cover;
+  background-position:center;
+}
+
+#image01{
+  background-image:url(img/flow01.png);
+}
+
+#image02{
+  background-image:url(img/flow02.png);
+}
+
+#image03{
+  background-image:url(img/flow03.png);
+}
+
+.main-index{
+  width:50px;
+  height:30px;
+  background-color: #FF9A4B;
+  text-align: center;
+  color:#FFFFFF;
+  line-height: 30px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.main-box:last-child{
+  margin:0;
+}
+
+.main-text{
+  margin:15px auto 10px 10px;
+  color:#000000;
+  text-align: justify;
+}
+
+h3{
+  font-size:18px;
+  margin:0 0 5px 0;
+}
+
+p{
+  font-size:12px;
+}
+
+footer{
+  width:100%;
+  height:50px;
+  background-color:#AAAAAA;
+}
+
+/*レスポンシブ対応をする*/
+@media screen and (max-width: 960px) {
+  header{
+    width:960px;
+  }
+
+  main{
+    width:960px;
+  }
+
+  footer{
+    width:960px;
+  }
+
+@media screen and (max-width: 768px) {
+  header{
+    width:100%;
+  }
+  main{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+  }
+
+  .main-box{
+    width:90%;
+    margin: 0 auto 20px;
+  }
+
+  .main-box:last-child{
+    margin:0 auto 0;
+  }
+
+  .main-image{
+    height: 150px;
+    width:auto;
+    margin:10px 10px auto;
+  }
+
+  .main-text{
+    margin:15px 10px 10px 10px;
+  }
+
+  footer{
+    width:100%;
+  }
