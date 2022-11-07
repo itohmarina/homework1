@@ -98,6 +98,7 @@ footer{
     width:960px;
   }
 
+}
 @media screen and (max-width: 768px) {
   header{
     width:100%;
@@ -124,9 +125,13 @@ footer{
   }
 
   .main-text{
+    text-justify:inter-ideograph;
     margin:15px 10px 10px 10px;
   }
+
 
   footer{
     width:100%;
   }
+
+}
